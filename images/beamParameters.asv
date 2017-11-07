@@ -1,0 +1,22 @@
+function [resolution,confocalParameter,divergence,radiusUp]=beamParameters(beamDiameterVector, positionVector)
+%gaussianBeamParameters returns the mean beam width, the divergence, 
+%Beam width
+adjustPositionVector=1000*positionVector;
+if length(beamDiameterVector) == length(positionVector);
+    [resolution,indResolution] = min(beamDiameterVector(:));
+    indConfocalDiameters=find(beamDiameterVector<=resolution*sqrt(2));
+    confocalParameter=(adjustPositionVector(1,max(indConfocalDiameters))- adjustPositionVector(1,indResolution));
+    
+    beamDiameter=beamDiameterVector(indConfocalDiameters(1,1):indConfocalDiameters(1,end));
+    outputPositionMm = adjustPositionVector(1,indConfocalDiameters(1):(indConfocalDiameters(end)));
+    outputPosition = outputPositionMm - outputPositionMm(indResolution);
+       
+    divergence=confocalParameter/(outputPosition(1,end)); %l=lambda
+else
+end
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0">
+  <configuration build-checksum="2947705720" file="/Users/dccote/Documents/Prog-SVN/dcclab/toolbox/dcclabToolbox.prj" location="/Users/dccote/Documents/Prog-SVN/dcclab/toolbox" name="dcclabToolbox" target="target.toolbox" target-name="Package Toolbox">
+    <param.appname>dcclab</param.appname>
+    <param.authnamewatermark>Daniel Côté</param.authnamewatermark>
+    <param.email>daniel.cote@crulrg.ulaval.ca</param.email>
+    <param.company>CERVO</param.company>
+    <param.summary>Simple toolbox to load and save any-dimensional stacks in a variety of formats, perform simple operatio images, perform simple raytracing.</param.summary>
+    <param.description>This toolbox is used for simple tasks related to multi-dimensional data loading and saving (i.e., stacks), but also for simple raytracing. Other small functions dealing with images complete the toolbox. It has been developed and tested on Mac OS X MATLAB2015 and up, but some functions require more recent versions of MATLAB. Some functions use the GUI or path information and may or may not work well on other platforms (Windows).</param.description>
+    <param.screenshot>${PROJECT_ROOT}/dcclab.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.output>${PROJECT_ROOT}/dcclab.mltbx</param.output>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.guid>1c2ce7cf-1e33-4b8b-aac1-30e49ccfe12f</param.guid>
+    <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
+% from packaging.  Excludes should be listed relative to the toolbox folder.
+% Some examples of how to specify excludes are provided below:
+%
+% A single file in the toolbox folder:
+.svn
+.DS_Store
+%
+% A single file in a subfolder of the toolbox folder:
+% example/.svn
+
+toolbox/
+
+% All files in a subfolder of the toolbox folder:
+% example/*
+%
+% All files of a certain name in all subfolders of the toolbox folder:
+**/.svn
+%
+% All files matching a pattern in all subfolders of the toolbox folder:
+% **/*.bak
+%</param.exclude.filters>
+    <param.examples />
+    <param.demosxml />
+    <param.apps />
+    <param.docs>/Users/dccote/Documents/Prog-SVN/dcclab/info.xml</param.docs>
+    <param.matlabpath.excludes />
+    <param.javaclasspath.excludes />
+    <unset>
+      <param.version />
+      <param.output />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.examples />
+      <param.demosxml />
+      <param.apps />
+      <param.matlabpath.excludes />
+      <param.javaclasspath.excludes />
+    </unset>
+    <fileset.rootdir>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab</file>
+    </fileset.rootdir>
+    <fileset.rootfiles>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/Contents.m</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/helptoc.xml</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/images</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/info.xml</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/installLibrary.m</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/raytracing</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/stacks</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/tests</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/updatedcclabLibrary.m</file>
+      <file>/Users/dccote/Documents/Prog-SVN/dcclab/utils</file>
+    </fileset.rootfiles>
+    <fileset.depfun.included />
+    <fileset.depfun.excluded />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/dccote/Documents/Prog-SVN/dcclab/toolbox" name="dcclab.mltbx" optional="false">/Users/dccote/Documents/Prog-SVN/dcclab/toolbox/dcclab.mltbx</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2017a.app</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.12.5</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
