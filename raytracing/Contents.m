@@ -56,8 +56,8 @@
 %   drawingProperties         - Returns the drawing properties: physical length and reasonable minimum width for "thin" elements.
 % 
 % Demos
+%   demoSimple                - Simple demo with a few elements
+%   demoExtended              - More complete demo with apertures
 %   demoComplete              - Complete demo with ray tracing example
 %   demoDoubleCore            - 
-%   demoExtended              - 
-%   demoSimple                - 
 %   doublecoreDemo            - Double core fiber
