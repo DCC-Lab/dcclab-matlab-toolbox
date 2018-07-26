@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="1852184795" file="/Users/dccote/Prog-Github/dcclab-matlab-toolbox/toolbox/dcclabToolbox.prj" location="/Users/dccote/Prog-Github/dcclab-matlab-toolbox/toolbox" name="dcclabToolbox" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="3522981245" file="/Users/dccote/GitHub/dcclab-matlab-toolbox/toolbox/dcclabToolbox.prj" location="/Users/dccote/GitHub/dcclab-matlab-toolbox/toolbox" name="dcclabToolbox" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>dcclab</param.appname>
     <param.authnamewatermark>Daniel Côté</param.authnamewatermark>
     <param.email>daniel.cote@crulrg.ulaval.ca</param.email>
@@ -21,6 +21,9 @@
 % A single file in the toolbox folder:
 .svn
 .DS_Store
+.git
+.gitignore
+
 %
 % A single file in a subfolder of the toolbox folder:
 % example/.svn
@@ -41,7 +44,7 @@ toolbox/
     <param.demosxml />
     <param.apps />
     <param.registered.apps />
-    <param.docs />
+    <param.docs>/Users/dccote/GitHub/dcclab-matlab-toolbox/info.xml</param.docs>
     <param.getting.started.guide />
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
@@ -54,6 +57,9 @@ toolbox/
     <param.compatiblity.linux>true</param.compatiblity.linux>
     <param.compatiblity.matlabonline>true</param.compatiblity.matlabonline>
     <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
       <param.version />
       <param.output />
       <param.products.name />
@@ -65,7 +71,6 @@ toolbox/
       <param.demosxml />
       <param.apps />
       <param.registered.apps />
-      <param.docs />
       <param.getting.started.guide />
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
@@ -79,18 +84,26 @@ toolbox/
       <param.compatiblity.matlabonline />
     </unset>
     <fileset.rootdir>
-      <file>/Users/dccote/Prog-Github/dcclab-matlab-toolbox/toolbox</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}/README.m</file>
-      <file>${PROJECT_ROOT}/dcclab-icon.graffle</file>
-      <file>${PROJECT_ROOT}/dcclab.png</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/Contents.m</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/README.md</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/helptoc.xml</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/images</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/info.xml</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/installLibrary.m</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/raytracing</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/stacks</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/tests</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/updatedcclabLibrary.m</file>
+      <file>/Users/dccote/GitHub/dcclab-matlab-toolbox/utils</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="/Users/dccote/Prog-Github/dcclab-matlab-toolbox/toolbox" name="dcclab.mltbx" optional="false">/Users/dccote/Prog-Github/dcclab-matlab-toolbox/toolbox/dcclab.mltbx</file>
+      <file location="/Users/dccote/GitHub/dcclab-matlab-toolbox/toolbox" name="dcclab.mltbx" optional="false">/Users/dccote/GitHub/dcclab-matlab-toolbox/toolbox/dcclab.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
@@ -125,7 +138,7 @@ toolbox/
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>10.13.4</osver>
+      <osver>10.13.6</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>maci64</arch>
